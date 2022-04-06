@@ -189,3 +189,111 @@ h1, h2, h3, span{
 /* footer */
 .dictionary-footer-content {
 }
+
+
+/* DIFFERENT SIZE SCREENS */
+
+/* phone */
+@media(max-width: 400px){
+    body{
+        max-width: 100vw;
+    }
+    #dictionary-header-content{
+        max-width: 100vw;
+    }
+    .nav-bar{
+        display: flex;
+        align-items: flex-start;
+        max-width: 100vw;
+        height: 100px;
+        padding-top: 10px;
+    }
+    .nav-list {
+        position: relative;
+        display: flex;
+        max-width: 100vw;
+    }
+    .nav-item {
+        padding: 5px;
+        padding-top: 8px;
+    }
+    .nav-item a img{
+        width: 30px;
+    }
+    .nav-item-help {
+        position: absolute;
+        top: 50px;
+        right: 124px;
+        font-size: 11px;
+        transition: 0s;
+    }
+    .nav-item-help:active{
+        color: #d0efff;
+    }
+    .site-header-wrapper{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: -50px;
+    }
+    .site-subheader {
+        display: none;
+    }
+    .site-header-line {
+        display: none;
+    }
+    .site-header {
+        font-size: 30px;
+        margin-top: 17px;
+    }
+
+    /* main */
+    .dictionary-main-content {
+    }
+    .main-header {
+        font-size: 50px;
+    }
+    .emoji-meanings-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 100vw;
+        margin-left: -285px;
+    }
+    .emoji-meaning-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: fit-content;
+    }
+    .emoji-header {
+        width: 10px;
+        margin-left: -62px;
+    }
+    .emoji-header img{
+        padding: 7px;
+    }
+    .emoji-meaning-header {
+        font-size: 20px;
+    }
+    .real-header {
+        font-size: 30px;
+    }
+    .meaning {
+        padding: 20px;
+    }
+    .divider-word {
+        font-size: 17px;
+        text-align: center;
+        margin-top: -20px;
+    }
+    .meaning-text {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* footer */
+    .dictionary-footer-content {
+    }
+}
