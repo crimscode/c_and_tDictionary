@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* color palette:
+    #03254c - darkblue
+    #1167b1 - in between darkblue/blue
+    #187bcd - blue
+    #2a9df4 - in between blue/lightblue
+    #d0efff - lightblue (more lightblue than you imagine)
+*/
+
+/* other */
+
+#from{
+    color: crimson;
+}
+
+/* non-classes */
+
+body{
+    background-color: #1167b1;
+}
+h1, h2, h3, span{
+    color: #d0efff;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+/* classes */
+
+/* header */
+
+/* nav */
+.nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    background-color: #03254c;
+    margin-top: -165px;
+}
+.nav-list{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.nav-item {
+    list-style-type: none;
+    margin: 0px 40px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #1167b1;
+    transition: 0.35s;
+}
+.nav-item a img{
+    width: 35px;
+}
+.nav-item:hover{
+    background-color: #d0efff;
+}
+.nav-item-help{
+    position: absolute;
+    right: 0px;
+    margin: 9px 25px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #FDE64B;
+    list-style-type: none;
+}
+.nav-item-help p{
+    color: red;
+    font-weight: 700;
+}
+
+
+/* header content */
+#dictionary-header-content{
+
+}
+.site-header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: 20vh;
+    margin: 0px auto;
+    background-color: #2a9df4;
+    border-radius: 25px;
+    margin-top: 165px;
+    padding: 0px 45px;
+    border: 12px double #000;
+}
+.site-subheader {
+    font-size: 50px;
+    margin-bottom: -100px;
+}
+.site-header-line{
+    width: 100%;
+    margin-bottom: -90px;
+    border: 2px solid #d0efff;
+}
+.site-header {
+    font-size: 72px;
+}
+
+
+/* main */
+.dictionary-main-content {
+    margin-top: 150px;
+}
+.main-header{
+    font-size: 60px;
+    text-decoration: underline;
+}
+.emoji-meanings-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 300px;
+    padding-top: 20px;
+    background-color: #1167b1;
+}
+.emoji-meaning-container {
+    border: 5px solid #2a9df4;
+    border-radius: 15px;
+    width: 400px;
+    height: 570px;
+    margin: 50px;
+}
+.emoji-header img{
+    background-color: #2a9df4;
+    padding: 15px 63px;
+    margin-top: -16px;
+    border-radius: 25px;
+    border: 10px solid #1167b1;
+    width: 40px;
+}
+.emoji-meaning-header{
+    background-color: #2a9df4;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 15px;
+}
+.real-header{
+    color: #d0efff;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+.meaning {
+    margin-top: 30px;
+    padding: 0px 30px;
+}
+.divider-word {
+    font-size: 30px;
+    text-align: left;
+    color: #d0efff;
+}
+.meaning-text {
+    text-align: left;
+    font-size: 20px;
+}
+.meaning-text span{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    color: #d0efff;
+}
+
+
+/* footer */
+.dictionary-footer-content {
+}
